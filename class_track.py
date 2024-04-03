@@ -9,12 +9,12 @@ from uniswap_universal_router_decoder import RouterCodec,FunctionRecipient
 from address import ANSEM_WALLET,ROOKIE_WALLET
 
 
-connect = Web3(Web3.HTTPProvider('https://rpc.ankr.com/base/372f35cacf52b2f1c9074e5190128df78644842d00e5fc4fa354cc12ee7befa4'))
+connect = Web3(Web3.HTTPProvider('https://rpc.ankr.com/base/YOUR ANKR API KEY'))
 PROCESS_ROUTE = connect.eth.contract(address=connect.to_checksum_address(address.PROCESS_ROUTE),abi=address.PROCESS_ROUTE_ABI)
 class Base:
 
     def __init__(self) -> None:
-        self.BASE_KEY = 'FTPKIZK6ARN7C5SNSTD49EXK4EK6EK972G'
+        self.BASE_KEY = 'YOU BASESCAN API KEY'
         self.influencerWallets = [connect.to_checksum_address(ANSEM_WALLET),connect.to_checksum_address(ROOKIE_WALLET)]
         self.ANSEM_HASHES = []
         self.ANSEM_RECENT_HASH = []
@@ -94,7 +94,7 @@ class Base:
         tokenContract = connect.eth.contract(address=token,abi=address.BASIC_TOKEN_ABI)
         symbol = tokenContract.functions.symbol().call()
         amount_out = amount_out/10**tokenContract.functions.decimals().call()
-        bot_token = '7077989634:AAESHM9LpnMjJv6j8XDQKFt24d2gcrng6m8'
+        bot_token = 'YOUR TELEGRAM BOT TOKEN'
         tradeInfo = f'INFLUENCER NOTIFICATION  \n\n'\
                     f'NAME: {name}\n\n'\
                     f'{name} WALLET: {wallet}\n\n'\
@@ -106,13 +106,13 @@ class Base:
             except:
                 bot=telegram.Bot(bot_token)
             async with bot:
-                await bot.send_message(text=tradeInfo,parse_mode=ParseMode.HTML,chat_id=963648721)
+                await bot.send_message(text=tradeInfo,parse_mode=ParseMode.HTML,chat_id= 'YOUR TELEGRAM CHAT_ID')
         if __name__!='__main__':
             asyncio.run(main())
 
     
     def off_chain(self):
-        bot_token = '6344573464:AAF_dIkl-hJ5aFT_f0IbUMCmwtOhIm41tvc'
+        bot_token = 'YOUR TELEGRAM BOT TOKEN'
         async def main():
             try:
                 bot=telegram.Bot(bot_token)
@@ -120,7 +120,7 @@ class Base:
                 bot=telegram.Bot(bot_token)
             async with bot:
                 await bot.send_message(text=f'INFLUENCERS ARE OFFCHAIN \n\nBOT_STATUS:ACTIVE',
-                chat_id=963648721)
+                chat_id='YOUR TELEGRAM CHAT_ID')
         if __name__!='__main__':
             asyncio.run(main())
 
