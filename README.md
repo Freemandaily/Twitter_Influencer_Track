@@ -15,7 +15,7 @@ Please consider creating a virtual environment for this library<br>
 - telegram [ you have to set you telegram bot to get notification on telegram. please google how to do that ,it is simple
 
 ## Note
-You have to paste the your telegram bot token and chat ID  in the "bot_token" variable and "chat_id" in Alert function in 'class_track.py'
+You have to paste the your telegram bot token and chat ID  in the "bot_token" variable and "chat_id" in Alert function in `class_track.py`
 
 
 
