@@ -1,5 +1,5 @@
 # Twitter_Influencer_Track
-This program monitors the Public walet address of a Twitter influencer on Base blockchain Network.<br>
+This program monitors the Public wallet address of a Twitter influencer on Base blockchain Network.<br>
 Monitoring Address of a notable trader might be a great strategy to nail a good trade.<br>
 
 
