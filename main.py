@@ -1,5 +1,3 @@
-# This script monitors the influencer ANSEM AND ROOKIE WALLET ADRESS ON BASE
-
 from web3 import *
 def main():
     import time,os,sys
@@ -38,6 +36,7 @@ def main():
         else:
             offchain += 1
             if offchain == 500:
+                offchain = 0
                 processor.off_chain()
         time.sleep(5)
         
