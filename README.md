@@ -4,4 +4,4 @@ Monitoring Address of a notable trader might be a great strategy to nail a good 
 
 
 Ansem and Rookie are one of those influencer that are profitable in trading , so monitoring their their next move is not a bad idea. 
-ANSEM_HANDLE(https://twitter.com/blknoiz06)
+[ANSEM_HANDLE](https://twitter.com/blknoiz06)
