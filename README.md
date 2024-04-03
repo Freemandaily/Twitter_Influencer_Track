@@ -13,9 +13,14 @@ Please consider creating a virtual environment for this library<br>
 - web3
 - uniswap-universal-router-decoder
 - telegram [ you have to set you telegram bot to get notification on telegram. please google how to do that ,it is simple
+  
 
 ## Note
-You have to paste your telegram bot token and chat ID  into the "bot_token" variable and "chat_id" respectively in Alert function in `class_track.py` module
+- You have to paste your telegram bot token and chat ID  into the "bot_token" variable and "chat_id" respectively in Alert function in `class_track.py` module.<BR>
+- GET YOUR BASESCAN API KEY
+- GET YOUR ANKR RPC API KEY
+
+
 
 
 
